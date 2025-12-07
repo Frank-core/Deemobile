@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register – SmartMobile Store</title>
+    <title>Register – DeeMobiles Services </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -32,8 +32,8 @@
     <label>Password:</label>
     <input type="password" id="password" minlength="6" required>
 
-    <label>Phone:</label>
-    <input type="tel" id="phone" pattern="[0-9]{10}" required>
+    <label>Phone No.:</label>
+    <input type="tel" id="phone" pattern="[0-9]{11}" required>
 
     <button type="submit">Register</button>
 </form>
@@ -48,7 +48,7 @@ function toggleMenu(){
 function validateForm(){
     const phone = document.getElementById("phone").value;
     if(phone.length !== 10){
-        alert("Phone number must be 10 digits");
+        alert("Phone number must be 11 digits, include 1 in the area code");
         return false;
     }
     return true;
