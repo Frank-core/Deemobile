@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – SmartMobile Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<h1>Our Services</h1>
+
+<ul class="service-list">
+    <li>Phone Repairs</li>
+    <li>Software Updates</li>
+    <li>Network Unlocking</li>
+    <li>Accessories Installation</li>
+</ul>
+
+<h2>Promo Video</h2>
+<video class="responsive-video" controls>
+    <source src="promo.mp4" type="video/mp4">
+</video>
+
+<footer>© 2025 SmartMobile Store</footer>
+
+<script>
+function toggleMenu(){ 
+    document.getElementById("navMenu").classList.toggle("open"); 
+}
+</script>
+
+</body>
+</html>

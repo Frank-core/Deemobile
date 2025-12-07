@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products – SmartMobile Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<h1>Latest Phones</h1>
+
+<section class="product-grid">
+    <div class="product-card">
+        <img src="images/phone1.jpg" alt="Phone 1" class="responsive-img">
+        <h3>Samsung Galaxy A54</h3>
+        <p>Stunning camera + long battery life.</p>
+        <strong>$399</strong>
+    </div>
+
+    <div class="product-card">
+        <img src="images/phone2.jpg" alt="Phone 2" class="responsive-img">
+        <h3>iPhone 12</h3>
+        <p>Fast performance, great display.</p>
+        <strong>$599</strong>
+    </div>
+</section>
+
+<footer>© 2025 SmartMobile Store</footer>
+
+<script>
+function toggleMenu(){ 
+    document.getElementById("navMenu").classList.toggle("open"); 
+}
+</script>
+
+</body>
+</html>
